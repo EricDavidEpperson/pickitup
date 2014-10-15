@@ -1,0 +1,91 @@
+
+$orbit-nav-bg: transparent;
+$orbit-nav-bg-hover: rgba(0,0,0,0.3) !default;
+$orbit-nav-arrow-color: #34495e;
+$orbit-nav-arrow-color-hover: black;
+$orbit-timer-show-progress-bar: false;
+$orbit-bullet-nav-color: #95a5a6;
+$orbit-bullet-nav-color-active: #34495e;
+$orbit-nav-hide-for-small: false;
+$orbit-bullet-hide-for-small: false;
+$orbit-timer-hide-for-small: true !default;
+$topbar-bg: #8C001A;
+$topbar-height: 60px;
+
+
+// import the CSS framework
+@import "foundation";
+
+//Orbit Slider Controls
+// We use these to control the left/right nav styles
+$orbit-nav-bg: transparent;
+$orbit-nav-bg-hover: rgba(0,0,0,0.3) !default;
+$orbit-nav-arrow-color: #34495e;
+$orbit-nav-arrow-color-hover: black;
+
+// We use these to control the timer styles
+$orbit-timer-show-progress-bar: false;
+
+// We use these to control the bullet nav styles
+$orbit-bullet-nav-color: #95a5a6;
+$orbit-bullet-nav-color-active: #34495e;
+
+// We use these to controls the style of slide numbers
+$orbit-slide-number-bg: rgba(0,0,0,0) !default;
+$orbit-slide-number-font-color: $white !default;
+$orbit-slide-number-padding: rem-calc(5) !default;
+
+// Graceful Loading Wrapper and preloader
+$wrapper-class: "slideshow-wrapper" !default;
+$preloader-class: "preloader" !default;
+
+// Hide controls on small
+$orbit-nav-hide-for-small: false;
+$orbit-bullet-hide-for-small: false;
+$orbit-timer-hide-for-small: true !default;
+//End Orbit Slider Controls
+
+// override for the 'Home' navigation link
+.top-bar .name {
+  font-size: rem-calc(13);
+  line-height: 45px; }
+.top-bar .name a {
+  font-weight: normal;
+  color: white;
+  padding: 0 15px; }
+
+// THESE ARE EXAMPLES YOU CAN MODIFY
+// create mixins using Foundation classes
+@mixin twelve-columns {
+  @extend .small-12;
+  @extend .columns;
+  }
+@mixin six-columns-centered {
+  @extend .small-6;
+  @extend .columns;
+  @extend .text-center;
+  }
+// create your own classes
+// to make views framework-neutral
+.column {
+  @include six-columns-centered;
+  }
+.form {
+  @include grid-column(6);
+  }
+.form-centered {
+  @include six-columns-centered;
+  }
+.submit {
+  @extend .button;
+  @extend .radius;
+  }
+// apply styles to HTML elements
+// to make views framework-neutral
+main {
+  @include twelve-columns;
+  }
+section {
+  @extend .row;
+  margin-top: 20px;
+  }

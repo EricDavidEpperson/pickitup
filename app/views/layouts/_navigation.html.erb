@@ -1,0 +1,25 @@
+<%# navigation styled for Zurb Foundation 5 %>
+<nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name"><%= link_to 'Home', root_path %></li>
+    <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+  </ul>
+  <div class="top-bar-section">
+    <ul>
+      <%= render 'layouts/navigation_links' %>
+    </ul>
+  </div>
+  <section class="top-bar-section" style="margin-top:0px;">
+
+    <ul class="right">
+      <li><a href="#" data-reveal-id="About">About</a></li>
+      <li><a href="http://eric-david-epperson.herokuapp.com/construction.html">Products</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="http://eric-david-epperson.herokuapp.com/construction.html">Sign In</a></li>
+    </ul>
+
+    <ul class="left">
+    </ul>
+  </section>
+
+</nav>
