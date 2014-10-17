@@ -1,0 +1,7 @@
+<%= simple_form_for @contact_form, remote: true do |f| %>
+<%= f.input :name, placeholder:"Your Name" %>
+<%= f.input :email, placeholder:"email@example.com" %>
+<%= f.input :subject, placeholder:"Brief Description" %>
+<%= f.input :message, as: :text, input_html:{rows:4} %>
+<%= f.submit "Contact Us"%>
+<% end %>
