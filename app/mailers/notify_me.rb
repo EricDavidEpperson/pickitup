@@ -7,6 +7,10 @@ class NotifyMe < ActionMailer::Base
     @subject = subject
     @message = message
 
-    mail(to: 'ericdavidepperson@gmail.com', subject: "#{subject}")
+    mail(
+      to: 'ericdavidepperson@gmail.com',
+      subject: "#{name}, #{email}, #{subject}",
+      message: "#{message}"
+      )
   end
 end
