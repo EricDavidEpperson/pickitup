@@ -32,7 +32,9 @@
 </style>
 
 <div id="about" class="reveal-modal" data-reveal>
-  <div style="float:right;" id="johnny-boy.png"><%= image_tag('johnny_working.png') %></div>
+  <div style="float:right;" id="johnny-boy.png">
+    <a href="#" data-reveal-id="egg"><%= image_tag('johnny_working.png') %></a>
+  </div>
   <h2>Pick It Up!</h2>
   <p>Pick It Up Clothing Co. was born out of the mind of Chef John Stuhlman, in
     St. Louis MO. With over 20 years of experience in professional kitchens, he
@@ -55,10 +57,19 @@
       <%= image_tag("facebook_icon.png")%>
     </a></h3>
     <h3>Address:</h3>
-    <h2>Pick It Up Clothing Company</h2>
+    <h4>Pick It Up Clothing Company</h4>
     2530 Annalee Brentwood MO 63144 US
   </div>
   <div class="small-12 large-5 columns" id="form">
     <%= render partial: 'contact_forms/form' %>
   </div>
+</div>
+
+<div id="egg" class="reveal-modal" data-reveal>
+  <div style="float:left">
+    <%= image_tag('Johnny_boy.jpg') %>
+  </div>
+  Here's another picture of Chef John being silly and posing for us. Don't tell him
+  we put this picture here, let's see if he can find it himself!
+  <a class="close-reveal-modal">&#215;</a>
 </div>
