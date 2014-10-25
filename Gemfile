@@ -50,3 +50,4 @@ group :development, :test do
   gem 'dotenv-rails'
 end
 gem 'pry', group: [:development, :test]
+gem 'rails_admin'
