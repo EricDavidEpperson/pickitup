@@ -1,7 +1,7 @@
 class ProductsController < ApplicationController
+
   def index
     @products = Product.all
-    @contact_form = ContactForm.new
   end
 
   def show
@@ -46,5 +46,5 @@ class ProductsController < ApplicationController
                                     :image,
                                     :price_in_cents,
                                     :inventory_count)
-  end  
+  end
 end

@@ -51,3 +51,4 @@ group :development, :test do
 end
 gem 'pry', group: [:development, :test]
 gem 'rails_admin'
+gem 'devise'
